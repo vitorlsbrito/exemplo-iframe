@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <title>GSC - Portal 360</title>
+
+        <style>
+            body, html {
+                font-size: 14px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            div#root {
+                background: #EEE;
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+            }
+
+            header {
+                width: 90%;
+                max-width: 1020px;
+                padding: 20px 0;
+                margin: 20px auto;
+                border: solid 1px #333;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            div.container {
+                display: flex;
+                flex-direction: row;
+                height: 500px;
+            }
+
+            aside {
+                width: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            article {
+                background: #FFF;
+                padding: 0 10px;
+                margin-right: 5%;
+                flex: 1;
+                overflow-y: scroll;
+            }
+
+            article h1 {
+                background: #CCC;
+                font-size: 16px;
+                padding: 5px 10px;
+            }
+
+            article div.decisionTree {
+                background: #FFF;
+                width: 100%;
+                height: 500px;
+                border: solid 1px #CCC;
+                padding: 10px;
+                box-sizing: border-box;
+                overflow-y: scroll;
+                display: flex;
+                flex-direction: column;
+            }
+
+            article div.decisionTree div.links {
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            article div.decisionTree div.links span {
+                color: #333;
+                width: 100px;
+                height: 20px;
+                margin-right: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+
+            article div.decisionTree div.links span:hover {
+                text-decoration: underline;
+            }
+
+            article div.decisionTree div.survey {
+                background: url('https://www.visitstpeteclearwater.com/sites/default/files/styles/listing_image/public/profiles/photos/listing-1055-9089_640x480.jpg');
+                background-size: cover;
+                width: 100%;
+                height: 500px;
+                overflow-y: scroll;
+            }
+
+            article div.decisionTree div.survey div.wrap {
+                background: #FFF;
+                width: 80%;
+                height: auto;
+                padding: 20px 30px;
+                border-radius: 10px;
+                box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+                box-sizing: border-box;
+                margin: 30px auto;
+            }
+
+            article div.decisionTree div.survey div.wrap p.question {
+                font-weight: bold;
+                margin: 0;
+            }
+
+            article div.decisionTree div.survey div.wrap input {
+                width: 100%;
+                height: 25px;
+                margin: 5px 0 10px 0;
+            }
+
+            article div.decisionTree div.survey div.wrap button {
+                background: blue;
+                color: #FFF;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                float: right;
+            }
+
+            article button.submit {
+                background: #999;
+                color: #FFF;
+                font-weight: bold;
+                border: none;
+                padding: 10px 20px;
+                float: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="root">
+            <header>
+                INFOS DO PACIENTE
+            </header>
+
+            <div class="container">
+                <aside>
+                    MENU
+                </aside>
+
+                <article>
+                    <h1>BLOCO 01</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate lorem mi, sed feugiat urna 
+                    aliquam id. Suspendisse potenti. Sed a pretium sapien. Vivamus molestie nisi eget porttitor vehicula.</p>
+
+                    <h1>BLOCO 02</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate lorem mi, sed feugiat urna 
+                    aliquam id. Suspendisse potenti. Sed a pretium sapien. Vivamus molestie nisi eget porttitor vehicula.</p>
+
+                    <h1>BLOCO 03</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate lorem mi, sed feugiat urna 
+                    aliquam id. Suspendisse potenti. Sed a pretium sapien. Vivamus molestie nisi eget porttitor vehicula.</p>
+
+                    <h1>ÁRVORE DECISÓRIA</h1>
+                    <div class="decisionTree">
+                        <div class="links">
+                            <span>Questionário A</span>
+                            <span>Questionário B</span>
+                            <span>Questionário C</span>
+                            <span>Questionário D</span>
+                            <span>Questionário E</span>
+                            <span>Questionário F</span>
+                            <span>Questionário G</span>
+                            <span>Questionário H</span>
+                            <span>Questionário I</span>
+                            <span>Questionário J</span>
+                            <span>Questionário K</span>
+                            <span>Questionário L</span>
+                            <span>Questionário M</span>
+                        </div>
+
+                        <div class="survey">
+                            <div class="wrap">
+                                <h2>Questionário A</h2>
+
+                                <p class="question">Pergunta 01</p>
+                                <input type="text" name="TxtAnswer01" id="TxtAnswer01" placeholder="xxxxx" />
+
+                                <p class="question">Pergunta 02</p>
+                                <input type="text" name="TxtAnswer01" id="TxtAnswer01" placeholder="xxxxx" />
+
+                                <p class="question">Pergunta 03</p>
+                                <input type="text" name="TxtAnswer01" id="TxtAnswer01" placeholder="xxxxx" />
+
+                                <p class="question">Pergunta 04</p>
+                                <input type="text" name="TxtAnswer01" id="TxtAnswer01" placeholder="xxxxx" />
+
+                                <p class="question">Pergunta 05</p>
+                                <input type="text" name="TxtAnswer01" id="TxtAnswer01" placeholder="xxxxx" />
+
+                                <p class="question">Pergunta 06</p>
+                                <input type="text" name="TxtAnswer01" id="TxtAnswer01" placeholder="xxxxx" />
+
+                                <button>Salvar</button>
+                                <br clear="all" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1>BLOCO 04</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate lorem mi, sed feugiat urna 
+                    aliquam id. Suspendisse potenti. Sed a pretium sapien. Vivamus molestie nisi eget porttitor vehicula.</p>
+
+                    <h1>BLOCO 05</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate lorem mi, sed feugiat urna 
+                    aliquam id. Suspendisse potenti. Sed a pretium sapien. Vivamus molestie nisi eget porttitor vehicula.</p>
+
+                    <h1>BLOCO 06</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate lorem mi, sed feugiat urna 
+                    aliquam id. Suspendisse potenti. Sed a pretium sapien. Vivamus molestie nisi eget porttitor vehicula.</p>
+
+                    <button class="submit">Cadastrar</button>
+                </article>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var spans = document.getElementsByTagName('span');
+        for(i=0;i<spans.length;i++) {
+            spans[i].onclick=changeSurvey;
+        }
+	
+        function changeSurvey() {
+            document.querySelector('#root > div > article > div > div.survey > div > h2').innerHTML = this.innerHTML;
+        }
+    </script>
+</html>
